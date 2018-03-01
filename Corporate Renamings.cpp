@@ -9,7 +9,7 @@ int main()
 {
 	ifstream fin("data.txt");
 
-	string changes[1000];	//full lines of changes to be made
+	string changes;		//stores full line of name changes to be made, one line at a time
 	string originals[1000];	//original company names
 	string news[1000];		//new company names
 	int num_changes;
@@ -21,11 +21,11 @@ int main()
 	//Read in every full line of changes and parse into original and new
 	for(int i = 0; i < num_changes; i++)
 	{
-		getline(fin, changes[i]);
-		int quote2_pos = changes[i].substr(1).find("\"");
-		originals[i] = changes[i].substr(1,quote2_pos);
+		getline(fin, changes);
+		int quote2_pos = changes.substr(1).find("\"");
+		originals[i] = changes.substr(1,quote2_pos);
 
-		news[i] = changes[i].substr(quote2_pos + 7);
+		news[i] = changes.substr(quote2_pos + 7);
 		news[i] = news[i].substr(0, news[i].length()-1);
 	}
 
