@@ -1,0 +1,13 @@
+5
+"Anderson Consulting" to "Accenture"
+"Enron" to "Dynegy"
+"DEC" to "Compaq"
+"TWA" to "America"
+"Bento" to "Rento"
+6
+Anderson Accounting begat Anderson Consulting, which
+offered advice to Enron before it DECLARED bankruptcy,
+which made Anderson
+Consulting quite happy that it changed its name
+in the first place.
+Stock for TWA traded high. TWA beat all rivals.
